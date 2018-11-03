@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebEECommerce_Core_Vue_SPA.Controllers
+namespace ECommerce.Controllers
 {
     public class HomeController : Controller
     {
