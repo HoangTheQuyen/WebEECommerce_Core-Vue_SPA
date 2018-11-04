@@ -22,12 +22,11 @@
 export default {
     name: "product-list",
 
-    data() {
-        return {
-            products: [
-                // products array as before...
-            ]
-        };
+    props:{
+        products:{
+            type: Array,
+            required: true
+        }
     },
     
     methods: {
