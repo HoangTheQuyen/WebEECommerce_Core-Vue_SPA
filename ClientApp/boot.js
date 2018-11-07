@@ -1,3 +1,5 @@
+
+import store from "./store";
 import Vue from "vue";
 import VueRouter from "vue-router";
 import BootstrapVue from "bootstrap-vue";
@@ -30,5 +32,6 @@ router.afterEach((to, from) => {
 new Vue({
   el: "#app-root",
   router: router,
+  store,
   render: h => h(require("./components/App.vue"))
 });
