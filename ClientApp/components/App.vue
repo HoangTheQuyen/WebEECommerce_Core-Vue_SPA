@@ -7,6 +7,9 @@
         <b-navbar-nav>
           <b-nav-item to="/products">Products</b-nav-item>
         </b-navbar-nav>
+        <b-navbar-nav class="ml-auto mr-4">
+          <cart-summary />
+        </b-navbar-nav>
       </b-collapse>
     </b-navbar>
     
@@ -17,8 +20,16 @@
 </template>
 
 <script>
+import CartSummary from "./cart/CartSummary.vue";
+
 export default {
-  name: "app"
+  name: "app",
+  components: {
+    CartSummary
+  },
+  beforeCreate() {
+    this.$store.commit("initialise");
+  }
 };
 </script>
 

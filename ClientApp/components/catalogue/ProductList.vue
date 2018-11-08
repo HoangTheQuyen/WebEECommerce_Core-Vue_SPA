@@ -11,9 +11,7 @@
             {{ product.shortDescription }}
           </p>
 
-          <p class="mt-4 mb-4">Prices from £{{ product.price }}</p>
-
-          <b-button variant="primary">Add to cart</b-button>
+          <p class="mt-4 mb-4">Prices from {{ product.price | currency }}</p>
         </b-media>
       </b-col>
     </b-row>
